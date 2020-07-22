@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <title>العمر كلو</title>
+</head>
+<body>
+    <section>
+        <dir>
+            <h2 class="reveal">Hazar Hamoud</h2>
+            <h2 class="reveal"> كل سنه وأنت بألف خير ياروحي <br> 🌹🌹❤ ونشالله بتضل منور حياتي💞 <br> يا اغلى الناس ع قلبي 😘😘😘😘🥳🥳🥳🥳</h2>
+            <img src="img/hazar.jpg" alt="Image 2">
+        </dir>
+    </section>
+    <section>
+        <dir>
+            <h2 class="reveal">Eleanor Hamoud</h2>
+            <h2 class="reveal"> GRATULERER MED DAGEN🥳❤️💖🥳 50</h2>
+            <img src="img/eleanor.jpg" alt="Image 2">
+        </dir>
+    </section>
+    <section>
+        <dir>
+            <h2 class="reveal">Gress Hamoud</h2>
+            <h2 class="reveal"> Jeg elsker deg papa GRATULERER med dagen. 🥳💞💝🥳❤️💖🥳 50</h2>
+            <img src="img/gress.jpg" alt="Image 2">
+        </dir>
+    </section>
+    <section>
+        <dir>
+            <h2 class="reveal">رضوان حمود</h2>
+            <h2 class="reveal"> بيي الغالي 🥰 <br>
+            كل عام وانت بالف خير ونشالله السنة تكون كلا فرح وسعادة <br>
+            وتفرح وتفتخر فينا كلنا وتضلك تاج فوق راسنا❤️ <br>
+            نشالله ععيد ميلادك الجاي منكون كلنا سوى محتفلين 🥳 <br>
+            Мы тебя любим ❤️❤️ скучаю 😘😘</h2>
+            <img src="img/radek.JPG" alt="Image 2">
+        </dir>
+    </section>
+
+    <section>
+        <dir>
+            <h2 class="reveal"> 🥰🥰🥰🥰🥰🥰🥰 </h2>
+            <img src="img/m1.jpg" alt="Image 2">
+            <img src="img/m2.jpg" alt="Image 2">
+            <img src="img/m3.jpg" alt="Image 2">
+            <img src="img/m4.jpg" alt="Image 2">
+
+        </dir>
+    </section>
+
+    <section>
+        <dir>
+            <h2 class="reveal">يوسف حمود</h2>
+            <h2 class="reveal">خي الغالي والعزيز على قلبي ابو رضوان شتقنالك كتير وشتقنا <br>
+                لرنين ضحكاتك وروحك الحلوة وشقد فقدنا وجودك ونصايحك .الله <br>
+                يحميك ويخليلك عيلتك الحلوة ونشالله بنفرح بنجاحاتن وتضل <br>
+                فوق راسن وتبقى بصحة وخير وسلامة. كل عام وانت بالف <br>
+                خير......🥳🥳🥳🥰😘😘😘</h2>
+        </dir>
+    </section>
+    <section>
+        <dir>
+            <h2 class="reveal">فاطمة حمود</h2>
+            <h2 class="reveal">العمر كلو انشالله بالسعاده والفرح <br>
+                 والنجاح لابو رضوان الغالي</h2>
+            <img src="img/FATIMA.jpg" alt="Image 4">
+        </dir>
+    </section>
+    
+    <section>
+        <dir>
+            <h2 class="reveal">عماد حسين</h2>
+            <h2 class="reveal">الخال الغالي كل عام وانت بألف خير <br>
+                انشالله بتطالعني لعندك وصير مغترب متلك</h2>
+        </dir>
+    </section>
+    <section>
+        <dir>
+            <h2 class="reveal">العيلة بسوريا</h2>
+            <h2 class="reveal">كل عام وانت بخير موسى ❤️ <br>
+            شتقنالك كتير</h2>
+            <img src="img/f1.jpg" alt="Image 4">
+            <img src="img/f2.jpg" alt="Image 4">
+            <img src="img/f3.jpg" alt="Image 4">
+            <img src="img/f4.jpg" alt="Image 4">
+            <img src="img/f5.jpg" alt="Image 4">
+            <img src="img/f6.jpg" alt="Image 4">
+        </dir>
+    </section>
+    <section>
+        <dir>
+        </dir>
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js"></script>
+    <script type="text/javascript">
+        const reveal = gsap.utils.toArray('.reveal');
+        reveal.forEach((text, i) => {
+            ScrollTrigger.create({
+                trigger: text,
+                toggleClass: 'active',
+                start: 'top 90%',
+                end: 'top 10%'
+            })
+        })
+
+        
+        const images = gsap.utils.toArray('img');
+        images.forEach((img, i) => {
+            ScrollTrigger.create({
+                trigger: img,
+                toggleClass: 'active',
+                start: 'top 90%',
+                end: 'top 10%'
+            })
+        })
+
+    </script>
+    
+</body>
+</html>
